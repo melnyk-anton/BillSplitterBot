@@ -15,7 +15,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME = os.getenv("DB_NAME")
 USER1_ID = int(os.getenv("USER1_ID"))
 USER2_ID = int(os.getenv("USER2_ID"))
-PORT = int(os.environ.get("PORT", 10000))
+PORT = os.getenv("PORT", 10000)
 
 USERS = {USER1_ID: "anthony", USER2_ID: "dimon"}
 
